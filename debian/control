@@ -1,0 +1,15 @@
+Source: fs-uae-arcade
+Section: otherosfs
+Priority: extra
+X-Python3-Version: >= 3.2
+Maintainer: Frode Solheim <frode@fs-uae.net>
+Build-Depends: debhelper (>= 9), dh-python, python3-all (>= 3.2), python3-setuptools
+Standards-Version: 3.9.4
+Homepage: http://fs-uae.net/
+
+Package: fs-uae-arcade
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}, python3-pyqt5, python3-pyqt5.qtopengl, python3-setuptools, fs-uae
+Recommends: python-lhafile, fs-uae-launcher
+Description: Full-screen game browser for FS-UAE.
+ FS-UAE Arcade is a full-screen game browser for Amiga/CD32/CDTV games.

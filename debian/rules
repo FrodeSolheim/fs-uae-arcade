@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+%:
+	dh $@ --with python3 --buildsystem pybuild
+
+override_dh_auto_install:
+	python3 setup.py install --root=debian/fs-uae-arcade \
+	--install-layout=deb --install-lib=/usr/share/fs-uae-arcade \
+	--install-scripts=/usr/share/fs-uae-arcade
+	make DESTDIR=$$(pwd)/debian/fs-uae-arcade prefix=/usr install-data
+
+override_dh_auto_build:
+	make mo

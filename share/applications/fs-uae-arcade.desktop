@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=FS-UAE Arcade
+Comment=Full-screen game browser for FS-UAE
+TryExec=fs-uae-arcade
+Exec=fs-uae-arcade %f
+StartupNotify=true
+Terminal=false
+Type=Application
+Icon=fs-uae-arcade
+Categories=Game;Emulator;

@@ -11,7 +11,7 @@ if [ "$SYSTEM_OS" = "macOS" ]; then
 cp -a fsbuild/_build/pyinstaller/$PACKAGE_NAME.app \
     $PLUGIN_BINDIR/"$PACKAGE_DISPLAY_NAME.app"
 ln -s "$PLUGIN_BINDIR/$PACKAGE_DISPLAY_NAME.app" "$PLUGIN_BINDIR/$PACKAGE_NAME.app"
-cp ./icon/fs-uae-launcher.icns \
+cp ./icon/fs-uae-arcade.icns \
     $PLUGIN_BINDIR/"$PACKAGE_DISPLAY_NAME.app"/Contents/Resources/
 cat > $PLUGIN_BINDIR/"$PACKAGE_DISPLAY_NAME.app"/Contents/Info.plist <<EOF
 <?xml version="1.0" encoding="UTF-8"?>

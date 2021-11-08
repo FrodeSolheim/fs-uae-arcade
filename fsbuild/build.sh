@@ -20,7 +20,7 @@ pyinstaller \
 	--distpath $BUILDDIR/pyinstaller \
 	--log-level DEBUG \
 	--windowed \
-	--osx-bundle-identifier no.fengestad.fs-uae-launcher \
+	--osx-bundle-identifier no.fengestad.fs-uae-arcade \
 	$PACKAGE_NAME
 BINDIR=fsbuild/_build/pyinstaller/$PACKAGE_NAME.app/Contents/MacOS
 else

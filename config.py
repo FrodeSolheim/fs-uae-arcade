@@ -14,7 +14,6 @@ package_map = {
     "fstd": ".",
     "fsui": ".",
     "launcher": ".",
-    "OpenGL": ".",
     "oyoyo": ".",
     "workspace": ".",
 }

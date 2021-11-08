@@ -1,0 +1,15 @@
+build
+debian/files
+debian/fs-uae-arcade
+debian/fs-uae-arcade*
+*.egg-info
+/fs-uae-arcade_*
+/fs-uae-arcade-*
+Lib
+/Makefile
+*.mo
+/.pybuild/
+*.pyc
+*.pyo
+/setup.py
+windows/fs-uae-arcade_*

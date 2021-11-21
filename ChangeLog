@@ -1,0 +1,130 @@
+Version 3.1.x:
+
+* Includes common code updates from FS-UAE Launcher 3.1.x.
+
+Version 2.9.7dev:
+
+* Respect joystick modes from the game database in input selection screen.
+* Fixed aspect toggle button.
+* Fixed support for dual X-Arcade controllers.
+* Gamepad/joystick devices can be hotplugged with on-screen notifications.
+* Option to disable search function (arcade_search).
+
+Version 2.9.6dev:
+
+* FS-UAE Arcade now defaults to fullscreen.
+* Run FS-UAE with window_border = 0 to reduce flickering on launch.
+
+Version 2.9.4dev:
+
+* New option arcade_initial_favorites to start with favorites filter.
+* New startup argument --favorites to show the favorites list directly.
+* Show game lists in FS-UAE Arcade (favorites, etc).
+* New option arcade_theme (=blue/red).
+* Fixed aspect correction toggle button.
+
+Version 2.9.3dev:
+
+* Add application icon to the Arcade window.
+* Added new icon for FS-UAE Arcade (instead of the Launcher icon).
+
+Version 2.9.2dev:
+
+* Re-added rudimentary item images for platforms.
+
+Version 2.9.0dev:
+
+* Allow mouse to be used to activate the close button.
+* Show mouse cursor briefly when moving the mouse.
+* Added stretch / keep aspect toggle button to top right menu.
+* Added V-Sync toggle button to top right menu.
+* Ability to see and change variant before starting the game.
+* Make menu rendering conformant to FS-UAE style.
+* More transition animations.
+* New cover rendering for non-portrait covers.
+* Use --platform=<platform> to start with a given platform filter, e.g.
+  --platform=cd32.
+* Variant sort order fixed to be same as in FS-UAE Launcher.
+* Fixed arrow keys for FS-UAE Arcade on MacOS.
+* Reversed position of platform and publisher names.
+
+Version 2.7.15dev:
+
+* Fixed startup problem introduced in 2.7.14dev.
+
+Version 2.7.10dev:
+
+* Cached images can be read from pre-generated zip files to reduce the
+  amount of small files.
+
+Version 2.7.8dev:
+
+* Open FS-UAE Arcade as a maximized borderless window as default for now.
+* Idle (stop rendering) when animations are done.
+* Do not process joystick input in the background while running FS-UAE
+  (Fixes problem where Arcade has disappeared when quitting FS-UAE).
+* Do not run needless render loop in the background while running FS-UAE
+  (Also fixes FS-UAE performance issue when running via Arcade).
+* Alt+Return (Cmd+Return) can be used to toggle fullscreen, Alt+Q (Cmd+Q)
+  to quit.
+* Delay loading GL widget until window has been shown.
+* Delay loading of PyOpenGL functions until first time needed.
+* Possibly fixes black screen for some ATI users on Windows.
+* Cleanup in the code base, removed some unused code.
+* Updated PyOpenGL to 3.1.0.
+
+Version 2.5.32dev:
+
+* Choose which monitor FS-UAE-Arcade appears on in full-screen mode.
+
+Version 2.5.30dev:
+
+* Fixed support for using GNOME 3 hide top bar extension + hiding task bar.
+
+Version 2.5.28dev:
+
+* Improved behavior when running in a default GNOME 3 desktop.
+* Fixed problem preventing JPEG covers to load on Windows.
+
+Version 2.5.19dev:
+
+* Fixed bug when using two identical joystick devices.
+* Fixed bug preventing joystick hats from being usable for navigation.
+* Added quick workaround for configuration of "XInput Controller #x".
+
+Version 2.5.5dev:
+
+* Improvements when running under Gnome 3.
+* Kill fs-uae-device-helper when FS-UAE Arcade is quit.
+* Fix image loader so it does not stop handling requests on download errors.
+
+Version 2.5.4dev:
+
+* Fixed startup error when XDG_CURRENT_DESKTOP is not set.
+* Work around a bug (?) in OpenGL initialization with PyQt5 on OS X.
+
+Version 2.5.3dev:
+
+* Mouse cursor is hidden again.
+* Default to maximized non-decorated window on GNOME 3 (works
+  around issue with arcade being forcefully minimized by GNOME 3 when
+  launching FS-UAE full-screen and FS-UAE Arcade is also full-screen).
+* More command-line options to control window/fullscreen mode.
+
+Version 2.5.2dev:
+
+* Arcade is ported to PyQt/Pyside.
+* Fixed device selection screen so unrecognized cannot be
+  selected for input ports.
+* Selected input devices are actually respected.
+* Use fs-uae-device-helper for reading joystick events.
+* pygame is no longer a dependency (Qt is used instead).
+* PIL / python-imaging is no longer a dependency.
+* PyOpenGL is no longer a dependency (bundled instead).
+* numpy is no longer a dependency.
+
+Version 2.5.0dev:
+
+* Fixed missing ext rom problem when starting CD32 games.
+* Fixed repeat problem when navigating with joystick hats.
+* Fixed a bug related to non-ASCII characters in joystick names.

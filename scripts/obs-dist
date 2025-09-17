@@ -3,6 +3,8 @@ set -e
 
 PACKAGE_VERSION=3.2.21
 
+./bootstrap
+./configure
 make dist-xz
 cp fs-uae-arcade-$PACKAGE_VERSION.tar.xz fs-uae-arcade_$PACKAGE_VERSION.orig.tar.xz
 

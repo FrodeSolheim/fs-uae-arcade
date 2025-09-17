@@ -1,0 +1,14 @@
+Source: fs-uae-arcade
+Section: otherosfs
+Priority: extra
+Maintainer: Frode Solheim <frode@fs-uae.net>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.4
+Homepage: http://fs-uae.net/
+
+Package: fs-uae-arcade
+Architecture: all
+Depends:
+ fs-uae-launcher
+Description: Arcade frontend for FS-UAE.
+ FS-UAE Arcade is an arcade frontend for browsing and running Amiga games.

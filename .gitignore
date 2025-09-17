@@ -1,0 +1,17 @@
+autom4te.cache
+Makefile.in
+Makefile
+*~
+configure
+INSTALL
+aclocal.m4
+config.log
+config.status
+install-sh
+missing
+fs-uae-arcade-*/
+*.xz
+*.dsc
+*.buildinfo
+*.changes
+*.gz

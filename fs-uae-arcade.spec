@@ -14,7 +14,7 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 %define name fs-uae-arcade
-%define version 3.2.21
+%define version 3.2.22
 %define release 1%{?dist}
 
 Summary: Fullscreen game browser for FS-UAE
